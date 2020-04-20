@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mysqlbase?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  typeHandlersPackage: com.qry.handler
+  mapper-locations: classpath*:/**/*Mapper.xml
+  type-aliases-package: com.example.demo.beans
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
