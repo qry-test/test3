@@ -11,6 +11,8 @@ import org.springframework.context.annotation.PropertySource;
 @MapperScan({"com.example.demo.dao"})
 public class Test3Application {
 	public static void main(String[] args) {
+
+		System.out.println("修改启动类");
 		SpringApplication.run(Test3Application.class, args);
 	}
 
