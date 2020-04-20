@@ -15,6 +15,7 @@ public class Test3Application {
 		System.out.println("修改启动类");
 		SpringApplication.run(Test3Application.class, args);
 		System.out.println("123");
+        System.out.println("456");
 	}
 
 }
