@@ -16,6 +16,8 @@ public class Test3Application {
 		SpringApplication.run(Test3Application.class, args);
 		System.out.println("123");
         System.out.println("456");
+		System.out.println("789");
+		System.out.println("修改123");
 	}
 
 }
